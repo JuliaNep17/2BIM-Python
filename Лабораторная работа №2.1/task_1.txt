@@ -1,0 +1,94 @@
+import doctest
+
+class Apartment:
+    """
+    Класс, описывающий квартиру.
+
+    Attributes:
+    - address: str, адрес квартиры
+    - area: int, площадь квартиры
+    """
+
+    def __init__(self, address: str, area: int):
+        self.address = address
+        self.area = area
+
+    def address_search(self) -> str:
+        """
+        Метод для поиска адреса квартиры.
+
+        Returns:
+        str: найденный адрес квартиры
+        """
+
+    def largest_area(self) -> int:
+        """
+        Метод для поиска наибольшей площади.
+
+        Returns:
+        int: наибольшая площадь квартиры
+        """
+
+if __name__ == "__main__":
+    doctest.testmod()
+
+class Article:
+    """
+    Класс, описывающий статью.
+
+    Attributes:
+    - author: str, автор статьи
+    - pages: int, количество страниц в статье
+    """
+
+    def __init__(self, author: str, pages: int):
+        self.author = author
+        self.pages = pages
+
+    def read_article(self) -> str:
+        """
+        Метод для чтения статьи.
+
+        Returns:
+        str: текст статьи
+        """
+
+    def increment_last_read_page(self, read_pages: int) -> int:
+        """
+        Метод увеличивает номер последней прочитанной страницы.
+
+        Args:
+        read_pages (int): количество страниц, которые были прочитаны
+
+        Returns:
+        int: номер последней прочитанной страницы
+        """
+
+class Journey:
+    """
+    Класс, описывающий путешествие.
+
+    Attributes:
+    - place: str, место, куда планируется путешествие
+    - duration: int, длительность путешествия в днях
+    """
+
+    def __init__(self, place: str, duration: int):
+        self.place = place
+        self.duration = duration
+
+    def place_search(self) -> str:
+        """
+        Метод для поиска места, куда запланировано путешествие.
+
+        Returns:
+        str: найденное место путешествия
+        """
+
+    def journey_time_countdown(self) -> int:
+        """
+        Метод для обратного отсчета времени путешествия.
+
+        Returns:
+        int: количество дней до начала путешествия
+        """
