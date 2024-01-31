@@ -14,6 +14,7 @@ BOOKS_DATABASE = [
 
 # TODO написать класс Book
 class Book:
+    """ Класс, описывающий объект Книга, который будет использоваться для книг, которые хранятся в библиотеке. """
     def __init__(self, id_, name, pages):
         self.id = id_
         self.name = name
@@ -21,17 +22,14 @@ class Book:
 
 # TODO написать класс Library
 class Library:
+    """ Класс, описывающий библиотеку. """
     def __init__(self, books=None):
-        if books is None:
-            self.books = []
-        else:
-            self.books = books
+        self.books = books or []
 
     def get_next_book_id(self):
         if len(self.books) == 0:
             return 1
-        else:
-            return self.books[-1].id + 1
+        return self.books[-1].id + 1
 
     def get_index_by_book_id(self, book_id):
         for index, book in enumerate(self.books):
