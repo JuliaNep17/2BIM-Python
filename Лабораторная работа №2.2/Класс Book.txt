@@ -12,6 +12,7 @@ BOOKS_DATABASE = [
 ]
 
 class Book:
+    """Класс, описывающий книгу"""
     def __init__(self, id_, name, pages):
         self.id = id_
         self.name = name
