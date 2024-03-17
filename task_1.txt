@@ -1,0 +1,58 @@
+if __name__ == "__main__":
+    class Plant:
+        def __init__(self, species: str, habitat: str):
+            """
+            Base class representing a plant.
+
+            Args:
+            species (str): The species of the plant.
+            habitat (str): The habitat where the plant grows.
+            """
+            self.species = species
+            self.habitat = habitat
+
+        def __str__(self) -> str:
+            """
+            Return a string representation of the plant.
+            """
+            pass
+
+        def __repr__(self) -> str:
+            """
+            Return a string representation that can be used to recreate the object.
+            """
+            pass
+
+    class Tree(Plant):
+        def __init__(self, species: str, habitat: str, age: int):
+            """
+            Class representing a tree, inheriting from the Plant class.
+
+            Args:
+            species (str): The species of the tree.
+            habitat (str): The habitat where the tree grows.
+            age (int): The age of the tree.
+            """
+            super().__init__(species, habitat)
+            self.age = age
+
+        def __str__(self) -> str:
+            """
+            Return a string representation of the tree.
+            """
+            pass
+
+        def grow(self) -> str:
+            """
+            Method that simulates the tree growing.
+
+            Returns:
+            str: A message indicating the tree has grown.
+            """
+            pass
+
+        def __repr__(self) -> str:
+            """
+            Return a string representation that can be used to recreate the object.
+            """
+            pass
